@@ -1,3 +1,4 @@
+import { StudyService } from './services/study/study.service';
 import { ExperienceService } from './services/experience/experience.service';
 import { ProjectService } from './services/project/project.service';
 import { BrowserModule } from '@angular/platform-browser';
@@ -62,7 +63,7 @@ import { ListLabelsComponent } from './components/list-labels/list-labels.compon
   imports: [
     BrowserModule
   ],
-  providers: [ProjectService, ExperienceService],
+  providers: [ProjectService, ExperienceService, StudyService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

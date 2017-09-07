@@ -1,3 +1,10 @@
-<p>
-  languages works!
-</p>
+<section id="Languages">
+  <h1 class="text-center"><i class="fa fa-comments fa-lg"></i> Languages</h1><br/>
+  <div class="container">
+    <div class="row">
+      <div *ngFor="let item of languages" class="col-sm-{{division}}">
+        <app-language [language]="item"></app-language>
+      </div>
+    </div>
+  </div>
+</section>

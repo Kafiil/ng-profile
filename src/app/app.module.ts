@@ -1,3 +1,4 @@
+import { LanguageService } from './services/language/language.service';
 import { StudyService } from './services/study/study.service';
 import { ExperienceService } from './services/experience/experience.service';
 import { ProjectService } from './services/project/project.service';
@@ -30,6 +31,7 @@ import { MainComponent } from './components/main/main.component';
 import { ContactsComponent } from './components/contacts/contacts.component';
 import { MainFeaturesComponent } from './components/main-features/main-features.component';
 import { ListLabelsComponent } from './components/list-labels/list-labels.component';
+import { RatingComponent } from './components/rating/rating.component';
 
 @NgModule({
   declarations: [
@@ -58,12 +60,13 @@ import { ListLabelsComponent } from './components/list-labels/list-labels.compon
     MainComponent,
     ContactsComponent,
     MainFeaturesComponent,
-    ListLabelsComponent
+    ListLabelsComponent,
+    RatingComponent
   ],
   imports: [
     BrowserModule
   ],
-  providers: [ProjectService, ExperienceService, StudyService],
+  providers: [ProjectService, ExperienceService, StudyService, LanguageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

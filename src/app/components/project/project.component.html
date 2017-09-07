@@ -1,0 +1,20 @@
+<div class="container">
+  <h2 class="text-center">{{project.title}}</h2>
+  <div class="row">
+    <div class="col-md-8 {{project.push}}">
+      <div *ngIf="project.image">
+        <img src="../../assets/img/Projects/{{project.image}}/{{project.image}}.gif" alt="" class="img-fluid">
+      </div>
+    </div>
+    <div class="col-md-4 {{project.pull}}">
+      <h3>Summary</h3>
+      <p>{{project.details}}</p>
+      <div *ngIf="project.features">
+        <app-main-features [features]="project.features"></app-main-features>
+      </div>
+      <app-list-labels [title]="'technologies'" [data]="project.technologies" [color]="'success'"></app-list-labels>
+      <app-list-labels [title]="'tools'" [data]="project.tools" [color]="'danger'"></app-list-labels>
+      <app-list-labels [title]="'libraries'" [data]="project.libraries" [color]="'warning'"></app-list-labels>
+    </div>
+  </div>
+</div>

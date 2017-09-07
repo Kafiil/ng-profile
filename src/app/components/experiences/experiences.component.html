@@ -1,0 +1,8 @@
+<section id="Experience">
+  <div class="container">
+    <h1 class="text-center"><i class="fa fa-briefcase fa-lg">Work Experience</i></h1>
+  </div>
+  <div *ngFor="let item of experiences">
+    <app-experience [experience]="item"></app-experience>
+  </div>
+</section>

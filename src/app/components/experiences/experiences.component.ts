@@ -1,5 +1,6 @@
-import { ExperienceService } from './../../services/experience/experience.service';
+import { DataService } from './../../services/data/data.service';
 import { Component, OnInit } from '@angular/core';
+import 'rxjs/Rx';
 
 @Component({
   selector: 'app-experiences',
@@ -9,10 +10,14 @@ import { Component, OnInit } from '@angular/core';
 export class ExperiencesComponent implements OnInit {
 
   experiences: any;
-  constructor(private experienceService: ExperienceService) { }
+  constructor(private dataService: DataService) { }
+
 
   ngOnInit() {
-    this.experiences = this.experienceService.getExperiences();
+    this.dataService.getExperiences()
+      .subscribe(res => {
+        this.experiences = res;
+      });
   }
 
 }

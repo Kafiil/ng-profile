@@ -1,9 +1,8 @@
-import { LanguageService } from './services/language/language.service';
-import { StudyService } from './services/study/study.service';
-import { ExperienceService } from './services/experience/experience.service';
-import { ProjectService } from './services/project/project.service';
+import { DataService } from './services/data/data.service';
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -64,9 +63,10 @@ import { RatingComponent } from './components/rating/rating.component';
     RatingComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpModule
   ],
-  providers: [ProjectService, ExperienceService, StudyService, LanguageService],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

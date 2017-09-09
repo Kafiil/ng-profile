@@ -1,0 +1,74 @@
+.social {
+  text-decoration: none;
+  color: #999999;
+}
+
+.social-facebook:hover,
+.social-facebook:focus {
+  color: #49659F;
+  border-color: #49659F;
+}
+
+.social-facebook:visited {
+  background-color: #e9e9e9;
+}
+
+.social-instagram:hover,
+.social-instagram:focus {
+  color: #9C785E;
+  border-color: #9C785E;
+}
+
+.social-instagram:visited {
+  background-color: #e9e9e9;
+}
+
+.social-linkedin:hover,
+.social-linkedin:focus {
+  color: #1B86BC;
+  border-color: #1B86BC;
+}
+
+.social-linkedin:visited {
+  background-color: #e9e9e9;
+}
+
+.social-email:hover,
+.social-email:focus {
+  color: #EA4335;
+  border-color: #EA4335;
+}
+
+.social-email:visited {
+  background-color: #e9e9e9;
+}
+
+.social-phone:hover,
+.social-phone:focus {
+  color: #43d854;
+  border-color: #43d854;
+}
+
+.social-phone:visited {
+  background-color: #e9e9e9;
+}
+
+.social-github:hover,
+.social-github:focus {
+  color: #000;
+  border-color: #000;
+}
+
+.social-github:visited {
+  background-color: #e9e9e9;
+}
+
+.social-twitter:hover,
+.social-twitter:focus {
+  color: #55acee;
+  border-color: #55acee;
+}
+
+.social-twitter:visited {
+  background-color: #e9e9e9;
+}

@@ -1,7 +1,8 @@
-import { languages } from './../../services/language/languages';
-import { LanguageService } from './../../services/language/language.service';
+import { DataService } from './../../services/data/data.service';
 import { Language } from './../../models/language';
 import { Component, OnInit, Input } from '@angular/core';
+
+import 'rxjs/Rx';
 
 @Component({
   selector: 'app-languages',
@@ -11,11 +12,14 @@ import { Component, OnInit, Input } from '@angular/core';
 export class LanguagesComponent implements OnInit {
   @Input('languages') languages: Language[];
   division: number;
-  constructor(private languageService: LanguageService) { }
+  constructor(private dataService: DataService) { }
 
   ngOnInit() {
-    this.languages = this.languageService.getLanguages();
-    this.division = Math.floor(12 / this.languages.length);
+    this.dataService.getLanguages()
+      .subscribe(res => {
+        this.languages = res;
+        this.division = Math.floor(12 / this.languages.length);
+      });
   }
 
 }

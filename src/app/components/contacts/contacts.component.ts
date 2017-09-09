@@ -1,4 +1,8 @@
+import { DataService } from './../../services/data/data.service';
+import { Contact } from './../../models/contact';
 import { Component, OnInit } from '@angular/core';
+
+import 'rxjs/Rx';
 
 @Component({
   selector: 'app-contacts',
@@ -7,9 +11,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private dataService: DataService) { }
+  contacts: Contact[];
 
   ngOnInit() {
+    this.dataService.getContacts()
+      .subscribe(res => {
+        this.contacts = res;
+      });
   }
 
 }

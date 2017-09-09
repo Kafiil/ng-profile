@@ -1,6 +1,7 @@
-import { StudyService } from './../../services/study/study.service';
+import { DataService } from './../../services/data/data.service';
 import { Study } from './../../models/study';
 import { Component, OnInit, Input } from '@angular/core';
+import 'rxjs/Rx';
 
 @Component({
   selector: 'app-studies',
@@ -10,11 +11,13 @@ import { Component, OnInit, Input } from '@angular/core';
 export class StudiesComponent implements OnInit {
 
   @Input('studies') studies: Study[];
-  constructor(private studyService: StudyService) {
+  constructor(private dataService: DataService) {
   }
 
   ngOnInit() {
-    this.studies = this.studyService.getStudies();
+    this.dataService.getStudies().subscribe(v => {
+      this.studies = v;
+    });
   }
 
 }

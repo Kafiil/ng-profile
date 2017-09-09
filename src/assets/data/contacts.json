@@ -1,0 +1,43 @@
+[{
+    "url": "mailto:kafilnasdami@gmail.com",
+    "icon": "envelope-square",
+    "title": "email",
+    "size": 2
+  },
+  {
+    "url": "#",
+    "icon": "phone-square",
+    "title": "phone",
+    "size": 2
+  },
+  {
+    "url": "https://github.com/kafiil",
+    "icon": "github-square",
+    "title": "github",
+    "size": 2
+  },
+  {
+    "url": "https://ma.linkedin.com/pub/kafil-nasdami/b6/917/a6a",
+    "icon": "linkedin-square",
+    "title": "linkedin",
+    "size": 2
+  },
+  {
+    "url": "https://twitter.com/kafiiil",
+    "icon": "twitter-square",
+    "title": "twitter",
+    "size": 2
+  },
+  {
+    "url": "https://facebook.com/kafil10",
+    "icon": "facebook-square",
+    "title": "facebook",
+    "size": 2
+  },
+  {
+    "url": "https://instagram.com/kafil10",
+    "icon": "instagram",
+    "title": "instagram",
+    "size": 2
+  }
+]

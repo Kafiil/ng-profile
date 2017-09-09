@@ -1,3 +1,7 @@
-<p>
-  skill works!
-</p>
+<div class="progress">
+  <div class=" progress-bar progress-bar-striped progress-bar-animated w-{{skill.rate}} bg-{{skill.color}}" role="progressbar"
+    attr.aria-valuenow="{{skill.rate}}" aria-valuemin="0" aria-valuemax="100" [style.width]="skill.rate+'%'" [style.height]="'25px'">
+    {{skill.name}}
+  </div>
+</div>
+<br>

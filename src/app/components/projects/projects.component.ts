@@ -1,7 +1,7 @@
-import { ProjectService } from './../../services/project/project.service';
+import { DataService } from './../../services/data/data.service';
 import { getTestBed } from '@angular/core/testing';
 import { Component, OnInit } from '@angular/core';
-
+import 'rxjs/Rx';
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
@@ -9,12 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
   projects: any[];
-  constructor(private projectService: ProjectService) {
-    // console.log(projectService.projects);
+  constructor(private dataService: DataService) {
   }
 
   ngOnInit() {
-    this.projects = this.projectService.getProjects();
+    this.dataService.getProjects()
+      .subscribe(res => {
+        this.projects = res;
+      });
   }
 
 }

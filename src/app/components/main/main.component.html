@@ -8,6 +8,9 @@
         <blockquote>
           <p>Choose a job you love, and you will never have to work a day in your life.</p><small>Confucius</small><br/>
         </blockquote>
+        <ul class="nav nav-pills">
+          <app-contact *ngFor="let item of contacts" [contact]="item"></app-contact>
+        </ul>
       </div>
     </div>
   </div>

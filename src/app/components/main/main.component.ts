@@ -1,3 +1,5 @@
+import { DataService } from './../../services/data/data.service';
+import { Contact } from './../../models/contact';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent implements OnInit {
-
-  constructor() { }
+  contacts: Contact[];
+  constructor(private dataService: DataService) { }
 
   ngOnInit() {
+    this.dataService.getContacts()
+      .subscribe(res => this.contacts = res);
   }
 
 }

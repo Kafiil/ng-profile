@@ -11,14 +11,12 @@ import 'rxjs/Rx';
 })
 export class LanguagesComponent implements OnInit {
   @Input('languages') languages: Language[];
-  division: number;
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
     this.dataService.getLanguages()
       .subscribe(res => {
         this.languages = res;
-        this.division = Math.floor(12 / this.languages.length);
       });
   }
 

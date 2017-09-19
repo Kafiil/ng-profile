@@ -1,5 +1,5 @@
 export class Experience {
-    joobTitle: string;
+    jobTitle: string;
     company: string;
     tasks: string[];
 }

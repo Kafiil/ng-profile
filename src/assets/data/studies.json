@@ -1,5 +1,5 @@
 [{
-    "image": "/assets/img/Schools/cpge.png",
+    "image": "assets/img/Schools/cpge.png",
     "school": "CPGE",
     "degree": "Mathematics, Physics and Engineer Sciences",
     "period": "2008 - 2010",
@@ -7,7 +7,7 @@
     "link": "http://cpge.ac.ma"
   },
   {
-    "image": "/assets/img/Schools/fcc.png",
+    "image": "assets/img/Schools/fcc.png",
     "school": "Free Code Camp",
     "degree": "Full Stack Web Developper",
     "period": "2016 - 2017",
@@ -15,7 +15,7 @@
     "link": "https://freecodecamp.com"
   },
   {
-    "image": "/assets/img/Schools/logo_emi.png",
+    "image": "assets/img/Schools/logo_emi.png",
     "school": "Mohammadia School of Engineers",
     "degree": "Computer Science Engineering Degree",
     "period": "2010 - 2013",

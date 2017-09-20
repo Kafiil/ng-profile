@@ -1,0 +1,68 @@
+@import "font.css";
+@import "colors";
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.8em;
+    position   : relative;
+    padding-top: 70px;
+    color      : black;
+  }
+  #main {
+    background-color: #fff;
+  }
+  section {
+    margin-top : -70px !important;
+    padding-top: 70px !important;
+  }
+  h1 {
+    font-family: 'Pacifico', cursive;
+    color      : $primary;
+  }
+  h2 {
+    color: $fourth;
+  }
+  h3 {
+    color: $secondary;
+  }
+  .jumbotron {
+    background-color: white;
+    h1 {
+      font-family: 'News Cycle','Arial Narrow Bold',sans-serif;
+      color      : $primary;
+    }
+  }
+  .footer {
+    font-family     : Roboto;
+    margin-top      : 2em;
+    padding         : 1em;
+    text-align      : center;
+    letter-spacing  : 0.2em;
+    color           : white;
+    background-color: $primary;
+    a {
+      font-weight    : bold;
+      text-decoration: none;
+      color          : $fifth;
+    }
+  }
+  .navbar-header {
+    img {
+      position: absolute;
+      top     : 5px;
+    }
+  }
+  #studies hr {
+    color : $primary;
+    height: 4px;
+  }
+  .center {
+    display: block;
+    margin : 0 auto;
+  }
+  #main {
+    h1 {
+      font-size: 14px;
+      font-size: 8vw;
+    }
+  }

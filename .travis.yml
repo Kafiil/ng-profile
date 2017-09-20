@@ -10,7 +10,11 @@ before_script:
   - npm install -g @angular/cli
 
 script:
-  - ng build --prod --base-href "https://kafiil.github.io/ng-profile/"
+  - ng build
 
-after_success:
-  - ngh
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
+  on:
+    branch: master

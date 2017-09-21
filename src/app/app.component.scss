@@ -5,16 +5,16 @@ body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.8em;
     position   : relative;
-    padding-top: 70px;
+    // padding-top: 70px;
     color      : black;
   }
   #main {
     background-color: #fff;
   }
-  section {
-    margin-top : -70px !important;
-    padding-top: 70px !important;
-  }
+  // section {
+  //   margin-top : -70px !important;
+  //   padding-top: 70px !important;
+  // }
   h1 {
     font-family: 'Pacifico', cursive;
     color      : $primary;

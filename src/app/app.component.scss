@@ -3,18 +3,12 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    line-height: 1.8em;
-    position   : relative;
-    // padding-top: 70px;
+  
     color      : black;
   }
   #main {
     background-color: #fff;
   }
-  // section {
-  //   margin-top : -70px !important;
-  //   padding-top: 70px !important;
-  // }
   h1 {
     font-family: 'Pacifico', cursive;
     color      : $primary;
@@ -28,7 +22,7 @@ body {
   .jumbotron {
     background-color: white;
     h1 {
-      font-family: 'News Cycle','Arial Narrow Bold',sans-serif;
+      font-family: 'Roboto','News Cycle','Arial Narrow Bold',sans-serif;
       color      : $primary;
     }
   }

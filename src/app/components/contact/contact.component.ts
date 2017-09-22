@@ -9,9 +9,13 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ContactComponent implements OnInit {
 
   @Input('contact') contact: Contact;
+  @Input('size') size: number;
   constructor() { }
 
   ngOnInit() {
+    if ( !this.size ) {
+      this.size = 2;
+    }
   }
 
 }

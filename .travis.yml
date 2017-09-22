@@ -7,7 +7,9 @@ cache:
 branches:
   only:
     - master
-
+git:
+  depth: 3
+  
 script:
   - ng build
 

@@ -95,12 +95,12 @@
   },
   {
     "name": "Angular 2",
-    "rate": 10,
+    "rate": 70,
     "color": ""
   },
   {
     "name": "Typescript",
-    "rate": 30,
+    "rate": 76,
     "color": ""
   },
   {
@@ -111,6 +111,11 @@
   {
     "name": "Gulp",
     "rate": 65,
+    "color": ""
+  },
+  {
+    "name": "Java",
+    "rate": 95,
     "color": ""
   }
 ]

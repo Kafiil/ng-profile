@@ -1,1 +1,22 @@
+.navbar {
+  padding: 0;
+}
 
+.bg-dark {
+    background-color: black !important;
+}
+
+li {
+    margin: 0;
+    
+  a {
+    font-weight: bold;
+    padding: 1rem;
+    padding-right: 1rem!important;
+    padding-left: 1rem!important;
+  }
+  .active {
+    background-color: white;
+    color: black!important;
+  }
+}

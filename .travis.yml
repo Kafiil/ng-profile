@@ -11,7 +11,7 @@ git:
   depth: 3
   
 script:
-  - ng build
+  - ng build --prod
 
 deploy:
   name : Kafil Nasdami

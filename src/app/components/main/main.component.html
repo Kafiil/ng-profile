@@ -1,17 +1,21 @@
-<div id="main">
-    <div class="row jumbotron">
-      <div class="col-md-4"><img src="assets/img/profile.jpeg" alt="Me in a very nice costume" class="img-responsive img-thumbnail center" /></div>
-      <div class="col-md-8">
-        <h1 class="text-center">Kafil Nasdami</h1>
-        <p class="lead text-center">Full stack developper C# .NET / Angular</p>
-        <blockquote>
-          <p>Choose a job you love, and you will never have to work a day in your life.</p><small>Confucius</small><br/>
-        </blockquote>
-        <div class="row">
-            <ul class="nav nav-pills mx-auto">
-                <app-contact *ngFor="let item of contacts" [size]="3" [contact]="item"></app-contact>
-              </ul>
-        </div>
+<div id="main" class="pt-5">
+  <div class="row jumbotron">
+    <div class="col-md-4"><img src="assets/img/profile.jpeg" alt="Me in a very nice costume" class="img-responsive rounded img-thumbnail" /></div>
+    <div class="col-md-8">
+      <h1 class="text-center">Kafil Nasdami</h1>
+      <p class="lead text-center">Full stack developper C#.NET/Angular</p>
+
+      <blockquote class="blockquote text-center">
+        <p class="mb-0">Choose a job you love, and you will never have to work a day in your life.</p>
+        <footer class="blockquote-footer">Confucius</footer>
+      </blockquote>
+
+
+      <div class="row">
+        <ul class="nav nav-pills mx-auto">
+          <app-contact *ngFor="let item of contacts" [size]="3" [contact]="item"></app-contact>
+        </ul>
       </div>
+    </div>
   </div>
 </div>

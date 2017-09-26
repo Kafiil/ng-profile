@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
   contacts: Contact[];
-  constructor(private dataService: DataService) { }
+  constructor(private dataService: DataService) {}
 
   ngOnInit() {
     this.dataService.getContacts()

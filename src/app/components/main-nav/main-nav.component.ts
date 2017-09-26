@@ -11,7 +11,7 @@ import 'rxjs/Rx';
 export class MainNavComponent implements OnInit {
 
   sections: Section[];
-  constructor(private dataService: DataService) { }
+  constructor(private dataService: DataService) {}
 
   ngOnInit() {
     this.dataService.getSections()
@@ -19,5 +19,4 @@ export class MainNavComponent implements OnInit {
         this.sections = res;
       });
   }
-
 }

@@ -1,12 +1,12 @@
 <div class="container">
   <h2 class="text-center">{{project.title}}</h2>
   <div class="row">
-    <div class="col-md-8 {{project.push}}">
+    <div class="col-md-8">
       <div *ngIf="project.image">
         <img src="assets/img/Projects/{{project.image}}/{{project.image}}.gif" alt="" class="img-fluid">
       </div>
     </div>
-    <div class="col-md-4 {{project.pull}}">
+    <div class="col-md-4">
       <h3>Summary</h3>
       <p>{{project.details}}</p>
       <div *ngIf="project.features">

@@ -69,4 +69,4 @@ import { RatingComponent } from './components/rating/rating.component';
   providers: [DataService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

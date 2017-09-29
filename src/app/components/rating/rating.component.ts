@@ -11,11 +11,11 @@ export class RatingComponent implements OnInit {
   @Input('rating') rating: Rating;
   full: any[];
   empty: any[];
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
 
-    const diff = (this.rating.half) ? 1 : 0;
+    const diff: number = +this.rating.half;
     const emptySize = this.rating.total - this.rating.full - diff;
 
     this.full = Array(this.rating.full).fill(0);

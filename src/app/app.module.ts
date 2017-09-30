@@ -1,3 +1,4 @@
+import { AgeService } from './services/age/age.service';
 import { DataService } from './services/data/data.service';
 
 import { BrowserModule } from '@angular/platform-browser';
@@ -60,7 +61,7 @@ import { RatingComponent } from './components/rating/rating.component';
     BrowserModule,
     HttpModule
   ],
-  providers: [DataService],
+  providers: [DataService, AgeService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

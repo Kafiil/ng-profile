@@ -5,4 +5,5 @@ export class Project {
   technologies: string[];
   tools: string[];
   libraries: string[];
+  features: string[];
 }

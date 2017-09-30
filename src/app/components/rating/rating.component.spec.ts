@@ -17,11 +17,7 @@ describe('RatingComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(RatingComponent);
     component = fixture.componentInstance;
-    component.rating = new Rating();
-    component.rating.full = 3;
-    component.rating.total = 10;
-    component.rating.half = true;
-    console.log(component.rating);
+    component.rating = Rating.createRating(3, 10, true);
     fixture.detectChanges();
   });
 

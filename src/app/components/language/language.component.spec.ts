@@ -20,7 +20,6 @@ describe('LanguageComponent', () => {
     fixture = TestBed.createComponent(LanguageComponent);
     component = fixture.componentInstance;
     component.language = new Language();
-    component.language.rating = new Rating();
     fixture.detectChanges();
   });
 

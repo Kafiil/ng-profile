@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AgeService } from '../../services/age/age.service';
 
 @Component({
   selector: 'app-about-me',
@@ -9,17 +10,13 @@ export class AboutMeComponent implements OnInit {
   myAge: number;
 
   // TODO: Make date of birth in a config file
-  calculateAge(): void {
-    const bday: any = new Date(1990, 0, 3);
-    const now: any = new Date();
-    const diff = Math.abs(now - bday);
-    this.myAge = Math.floor(Math.abs(diff) / 31556900000);
+
+  constructor(private ageService: AgeService) {
+
   }
 
-  constructor() { }
-
   ngOnInit() {
-    this.calculateAge();
+    this.myAge = this.ageService.calculateAge(new Date(1990, 0, 3));
   }
 
 }

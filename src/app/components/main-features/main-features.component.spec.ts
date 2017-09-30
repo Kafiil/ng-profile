@@ -4,18 +4,19 @@ import { MainFeaturesComponent } from './main-features.component';
 
 describe('MainFeaturesComponent', () => {
   let component: MainFeaturesComponent;
-  let fixture: ComponentFixture<MainFeaturesComponent>;
+  let fixture: ComponentFixture < MainFeaturesComponent > ;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MainFeaturesComponent ]
-    })
-    .compileComponents();
+        declarations: [MainFeaturesComponent]
+      })
+      .compileComponents();
   }));
 
   beforeEach(() => {
     fixture = TestBed.createComponent(MainFeaturesComponent);
     component = fixture.componentInstance;
+    component.features = null;
     fixture.detectChanges();
   });
 

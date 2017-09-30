@@ -5,14 +5,11 @@ import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/header/header.component';
 import { MainNavComponent } from './components/main-nav/main-nav.component';
 import { SectionsComponent } from './components/sections/sections.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { AnalyticsComponent } from './components/analytics/analytics.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { ContactComponent } from './components/contact/contact.component';
-import { DescriptionComponent } from './components/description/description.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { FormComponent } from './components/form/form.component';
 import { ExperiencesComponent } from './components/experiences/experiences.component';
@@ -35,14 +32,11 @@ import { RatingComponent } from './components/rating/rating.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
     MainNavComponent,
     SectionsComponent,
     FooterComponent,
-    AnalyticsComponent,
     AboutMeComponent,
     ContactComponent,
-    DescriptionComponent,
     ExperienceComponent,
     FormComponent,
     ExperiencesComponent,

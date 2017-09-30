@@ -1,3 +1,6 @@
+import { HttpModule } from '@angular/http';
+import { DataService } from './../../services/data/data.service';
+import { StudieComponent } from './../studie/studie.component';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { StudiesComponent } from './studies.component';
@@ -8,7 +11,11 @@ describe('StudiesComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ StudiesComponent ]
+      declarations: [ StudiesComponent,
+        StudieComponent
+      ],
+      providers: [DataService],
+      imports: [HttpModule]
     })
     .compileComponents();
   }));

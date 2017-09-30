@@ -15,8 +15,8 @@ export class RatingComponent implements OnInit {
 
   ngOnInit() {
 
-    const diff: number = +this.rating.half;
-    const emptySize = this.rating.total - this.rating.full - diff;
+    const diff: number = this.rating.half ? 1 : 0;
+    const emptySize = this.rating.total - this.rating.full - diff || 0;
 
     this.full = Array(this.rating.full).fill(0);
     this.empty = Array(emptySize).fill(0);

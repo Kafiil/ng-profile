@@ -1,3 +1,5 @@
+import { Info } from './../../models/info';
+import { DataService } from './../../services/data/data.service';
 import { Component, OnInit } from '@angular/core';
 import { AgeService } from '../../services/age/age.service';
 
@@ -8,15 +10,19 @@ import { AgeService } from '../../services/age/age.service';
 })
 export class AboutMeComponent implements OnInit {
   myAge: number;
+  info: Info;
 
-  // TODO: Make date of birth in a config file
-
-  constructor(private ageService: AgeService) {
+  constructor(private ageService: AgeService, private dataService: DataService) {
 
   }
 
   ngOnInit() {
-    this.myAge = this.ageService.calculateAge(new Date(1990, 0, 3));
+    this.dataService.getInfo()
+      .subscribe((res: any) => {
+        this.info = res as Info;
+        this.myAge = this.ageService.calculateAge(new Date(this.info.dateOfBirth));
+      });
+
   }
 
 }

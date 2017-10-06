@@ -8,20 +8,21 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class SkillComponent implements OnInit {
   @Input('skill') skill: Skill;
-  constructor() { }
+  color: string;
+  constructor() {}
 
   ngOnInit() {
     this.initSkillColor();
   }
   initSkillColor(): any {
     if (this.skill.rate < 25) {
-      this.skill.color = 'danger';
+      this.color = 'danger';
     } else if (this.skill.rate < 50 && this.skill.rate >= 25) {
-      this.skill.color = 'warning';
+      this.color = 'warning';
     } else if (this.skill.rate < 75 && this.skill.rate >= 50) {
-      this.skill.color = 'primary';
+      this.color = 'primary';
     } else {
-      this.skill.color = 'success';
+      this.color = 'success';
     }
   }
 

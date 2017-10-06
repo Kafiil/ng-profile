@@ -1,19 +1,20 @@
 <div id="main" class="pt-5">
   <div class="row jumbotron">
-    <div class="col-md-4"><img src="assets/img/profile.jpeg" alt="Me in a very nice costume" class="img-responsive rounded img-thumbnail" /></div>
+    <div class="col-md-4"><img src="assets/img/profile.jpeg" alt="Me in a very nice costume" class="img-responsive rounded img-thumbnail"
+      /></div>
     <div class="col-md-8">
-      <h1 class="text-center">Kafil Nasdami</h1>
-      <p class="lead text-center">Full stack developper C#.NET/Angular</p>
+      <h1 class="text-center">{{info?.name}}</h1>
+      <p class="lead text-center">{{info?.jobTitle}}</p>
 
       <blockquote class="blockquote text-center">
-        <p class="mb-0">Choose a job you love, and you will never have to work a day in your life.</p>
-        <footer class="blockquote-footer">Confucius</footer>
+        <p class="mb-0">{{info?.favoriteQuote.content}}</p>
+        <footer class="blockquote-footer">{{info?.favoriteQuote.author}}</footer>
       </blockquote>
 
 
       <div class="row">
         <ul class="nav nav-pills mx-auto">
-          <app-contact *ngFor="let item of contacts" [size]="3" [contact]="item"></app-contact>
+          <app-contact *ngFor="let item of contacts" [size]="4" [contact]="item"></app-contact>
         </ul>
       </div>
     </div>

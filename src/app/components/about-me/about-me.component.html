@@ -4,17 +4,11 @@
     <div class="row">
       <div class="col-md-12">
         <h1 class="text-center"><i class="fa fa-user-secret"></i> About Me</h1>
-        <p class="lead text-center">I am Kafil Nasdami, a {{myAge}} Years old from the wonderful city of Marrakech.
+        <p class="lead text-center">
+          I am {{info?.name}} , a {{myAge}} Years old from the wonderful city of {{info?.city}}
+          in {{info?.country}}.
         </p>
-        <p class="lead">
-          My main strength is that I love programming, which makes what I do not only a job but also a passion. As part of my previous
-          experiences, I've build a lot of websites and web applications mainly from scratch.
-          <br> I code with C# but also Java. I'm very comfortable around .NET technologies such as ASP.NET MVC, SQL Server,
-          Entity framework...
-          <br>I also use bootstrap, javascript jquery and other Javascript technologies such as AngularJS and React ...
-          <br> If you ever need a reliable resource that would get the job done in a convenient period of time, then I guess
-          I am your man :)
-        </p>
+        <p *ngFor="let p of info?.aboutMe" class="lead">{{p}}</p>
       </div>
     </div>
   </div>

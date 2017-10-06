@@ -1,3 +1,4 @@
+import { DataService } from './../../services/data/data.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,15 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
   year: number;
-  author:string;
-  constructor() { }
+  author: string;
+  constructor(private dataService: DataService) {}
 
   ngOnInit() {
-    const today = new Date();
-    this.year = today.getFullYear();
+    this.year = new Date().getFullYear();
 
-    // TODO: Get this info from local json file
-    this.author = "NASDAMI Kafil";
+    this.dataService.getInfo()
+      .subscribe(res => this.author = res.name);
   }
 
 }

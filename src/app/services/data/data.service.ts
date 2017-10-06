@@ -1,15 +1,12 @@
-
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
 import 'rxjs/Rx';
 import { Observable } from 'rxjs/Rx';
 
-
 @Injectable()
 export class DataService {
 
-
-  constructor(private http: Http) { }
+  constructor(private http: Http) {}
 
   getExperiences() {
     return this.getLocalJson('experiences');
@@ -35,16 +32,16 @@ export class DataService {
   }
 
   getSections() {
-    return this.http.get(`assets/data/sections.json`)
-      .map(res => res.json());
+    return this.getLocalJson('sections');
   }
 
-  getLocalJson(filename: string): Observable<any> {
+  getInfo() {
+    return this.getLocalJson('info');
+  }
+
+  getLocalJson(filename: string): Observable < any > {
     return this.http.get(`assets/data/${filename}.json`)
       .map(res => res.json());
   }
-
-
-
 
 }

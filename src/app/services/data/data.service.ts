@@ -2,9 +2,10 @@ import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
 import 'rxjs/Rx';
 import { Observable } from 'rxjs/Rx';
+import { IDataService } from './Idata.service';
 
 @Injectable()
-export class DataService {
+export class DataService implements IDataService {
 
   constructor(private http: Http) {}
 

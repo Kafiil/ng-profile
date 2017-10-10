@@ -11,18 +11,16 @@ import 'rxjs/Rx';
 export class StudiesComponent implements OnInit {
 
   @Input('studies') studies: Study[];
-  constructor(private dataService: DataService) {
-  }
+  constructor(private dataService: DataService) {}
 
   ngOnInit() {
     this.dataService.getStudies()
-      .do((res: Study[]) => {
-        res.sort((a, b) => Study.orderStudyDesc(a.period, b.period));
-      })
+      // .do((res: Study[]) => {
+      //   res.sort((a, b) => Study.orderStudyDesc(a.period, b.period));
+      // })
       .subscribe(v => {
         this.studies = v;
       });
-
 
   }
 

@@ -18,5 +18,6 @@ export class MainNavComponent implements OnInit {
       .subscribe(res => {
         this.sections = res;
       });
+
   }
 }

@@ -1,9 +1,9 @@
-<section id="Contact" class="mt-2">
+<section id="Contact">
   <h1 class="text-center"><i class="fa fa-envelope"></i> Contact Me</h1>
-    <h2 class="text-center text-muted">Get in touch with Me</h2><br/>
-        <div class="row">
-            <ul class="nav nav-pills mx-auto">
-                <app-contact *ngFor="let item of contacts" [size]="4" [contact]="item"></app-contact>
-              </ul>
-        </div>
+  <h2 class="text-center text-muted">Get in touch with Me</h2><br/>
+  <div class="row">
+    <ul class="nav nav-pills mx-auto my-5">
+      <app-contact *ngFor="let item of contacts" [size]="5" [contact]="item"></app-contact>
+    </ul>
+  </div>
 </section>

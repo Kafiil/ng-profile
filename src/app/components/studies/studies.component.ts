@@ -15,9 +15,9 @@ export class StudiesComponent implements OnInit {
 
   ngOnInit() {
     this.dataService.getStudies()
-      // .do((res: Study[]) => {
-      //   res.sort((a, b) => Study.orderStudyDesc(a.period, b.period));
-      // })
+      .do((res: Study[]) => {
+        res.sort((a, b) => Study.orderStudyDesc(a.period, b.period));
+      })
       .subscribe(v => {
         this.studies = v;
       });

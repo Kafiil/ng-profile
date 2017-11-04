@@ -1,5 +1,5 @@
 [{
-    "title": "Suivi de dossiers achat de l'ONCF",
+    "title": "Managing purchasings",
     "details": "Developped using the latest version of ASP.NET MVC ,this application make it easier to manage orders",
     "image": "SuiviAchat",
     "technologies": ["ASP.NET MVC", "C#", "Javascript", "AJAX", "HTML", "CSS",
@@ -15,8 +15,8 @@
   },
 
   {
-    "title": "Gestion des Appels d'Offres de l'ONCF",
-    "details": "application de gestion des dossiers achat de l'ONCF",
+    "title": "Procurement management",
+    "details": "application de gestion des dossiers achat",
     "image": "AoWeb",
     "technologies": ["ASP.NET MVC", "C#", "Javascript", "HTML", "CSS", "SQL",
       "Entity Framework"
@@ -41,7 +41,7 @@
   {
     "image": "Portfolio",
     "title": "This website",
-    "details": "My personal online resume",
+    "details": "My personal online resume, cantains informations about me, who am I, what I do and how to get in touch with me",
     "technologies": ["Jade", "Sass", "jQuery", "Grunt"],
     "tools": ["Atom text Editor", "Git", "Bower", "NPM"],
     "features": ["Mobile first responsive design", "About me",

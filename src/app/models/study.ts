@@ -1,5 +1,6 @@
 
 export class Study {
+
     image: string;
     school: string;
     degree: string;
@@ -7,16 +8,15 @@ export class Study {
     details: string;
     link: string;
 
-    public static orderStudyAsc(a: string, b: string): number {
-        return this.yearFromPeriod(a) - this.yearFromPeriod(b);
+    public  static orderStudyAsc(firstPeriod: string, secondPeriod: string): number {
+        return this.yearFromPeriod(firstPeriod) - this.yearFromPeriod(secondPeriod);
     }
 
-    public static orderStudyDesc(a: string, b: string) {
-        return -1 * this.orderStudyAsc(a, b);
+    public static orderStudyDesc(firstPeriod: string, secondPeriod: string) {
+        return -1 * this.orderStudyAsc(firstPeriod, secondPeriod);
     }
 
-
-    public static yearFromPeriod(period: string): number {
+    private static yearFromPeriod(period: string): number {
         return parseInt(period.split(' ')[0], 0);
     }
 

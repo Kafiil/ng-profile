@@ -17,11 +17,12 @@ describe('RatingComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(RatingComponent);
     component = fixture.componentInstance;
-    component.rating = Rating.createRating(3, 10, true);
+    component.rating = new Rating(3, 10, true);
     fixture.detectChanges();
   });
 
   it('should be correctly set the empty array', () => {
+    // expected 3 full stars and 1 halt full start so 10 - 3 - 1 = 6 empty stars
     expect(component.empty.length).toBe(6);
   });
 });

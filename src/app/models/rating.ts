@@ -3,13 +3,9 @@ export class Rating {
   half: boolean;
   total: number;
 
-  constructor() {}
-
-  public static createRating(full: number, total: number, half: boolean = false) {
-    const rating = new Rating();
-    rating.full = full;
-    rating.half = half;
-    rating.total = total;
-    return rating;
+  constructor(full?: number, total?: number, half?: boolean) {
+    this.full = full;
+    this.half = half;
+    this.total = total;
   }
 }

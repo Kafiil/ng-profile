@@ -2,6 +2,8 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { AboutMeComponent } from './about-me.component';
 import { AgeService } from '../../services/age/age.service';
+import { DataService } from '../../services/data/data.service';
+import { HttpModule } from '@angular/http';
 
 describe('AboutMeComponent', () => {
   let component: AboutMeComponent;
@@ -10,7 +12,8 @@ describe('AboutMeComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
         declarations: [AboutMeComponent],
-        providers: [AgeService]
+        providers: [AgeService, DataService],
+        imports: [HttpModule]
       })
       .compileComponents();
   }));

@@ -7,8 +7,8 @@ describe('ng-portfolio App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('Should display my name', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to app!');
+    expect(page.getParagraphText()).toEqual('Kafil Nasdami');
   });
 });

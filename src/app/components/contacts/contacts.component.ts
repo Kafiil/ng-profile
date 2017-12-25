@@ -1,7 +1,6 @@
 import { DataService } from './../../services/data/data.service';
 import { Contact } from './../../models/contact';
 import { Component, OnInit } from '@angular/core';
-
 import 'rxjs/Rx';
 
 @Component({
@@ -16,7 +15,7 @@ export class ContactsComponent implements OnInit {
 
   ngOnInit() {
     this.dataService.getContacts()
-      .subscribe(res => {
+      .subscribe((res: Contact[]) => {
         this.contacts = res.filter(e => e.display);
       });
   }

@@ -11,13 +11,13 @@ import 'rxjs/Rx';
 })
 export class ContactsComponent implements OnInit {
 
-  constructor(private dataService: DataService) { }
+  constructor(private dataService: DataService) {}
   contacts: Contact[];
 
   ngOnInit() {
     this.dataService.getContacts()
       .subscribe(res => {
-        this.contacts = res;
+        this.contacts = res.filter(e => e.display);
       });
   }
 

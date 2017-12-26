@@ -1,14 +1,4 @@
 [{
-    "jobTitle": "Project Manager",
-    "company": "National Office of Railways",
-    "tasks": ["Etude de l\"existant",
-      "Spécification des besoins",
-      "Benchmark des solutions intégrés",
-      "Redaction du CPS"
-    ]
-  },
-
-  {
     "jobTitle": "Senior Analyst Designer",
     "company": "National Office of Railways",
     "tasks": ["Writing requirement", "Maintaining legacy applications",
